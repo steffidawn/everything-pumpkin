@@ -180,7 +180,7 @@ class App extends Component {
       <Router>
         <div>
           <div>
-          <nav className="navbar navbar-inverse navbar-fixed-top">
+          <nav className="navbar navbar-inverse navbar-fixed-top" id="main-nav">
             <div className="container">
               <a className="navbar-brand" href="#">Pumpkins Direct</a>
 
@@ -206,7 +206,17 @@ class App extends Component {
             <Route path = '/deal' component = {Deal} />
           </div>
 
+          <div id="main-body">
+            <Pumpkin />
+            <Pumpkin />
+            <Pumpkin />
+          </div>
 
+          <footer className="footer">
+            <div className="container">
+              <span className="text-muted">Stuff here</span>
+            </div>
+          </footer>
         </div>
       </Router>
     );
