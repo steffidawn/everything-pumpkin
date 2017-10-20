@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 
 class Pumpkin extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const name = this.props.name;
     return (
-      <div>
-        <h1>PUMPKIN COMPONENT</h1>
-      </div>
+        <div className="pumpkin-main">
+          <img src={this.props.url} />
+          <p>{name}</p>
+        </div>
     );
   }
 }

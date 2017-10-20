@@ -1,31 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 class Cart extends Component {
-  constructor(props) {
-  super(props);
-  this.state = {
-    pumpkinData: [
-      {
-        name: "Polar Bear",
-        description: "Polar Bear retains its color after maturity in the field, at market, and in decorative displays. Long, vigorous vines produce fruit typically weighing 30-65 lb. ",
-        url: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw0c19e980/images/products/vegetables/02504_01_polarbear_sm_.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196"
-      },
-      {
-        name: "Munchkin",
-        description: "Fruits avg. 1/2 lb., and are bright orange with deep ribs. Avg. yield: 14 fruits/plant. Very uniform, only 3-4'' wide.",
-        url: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwc3bb7d14/images/products/vegetables/03075_01_munchkin.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196"
-      },
-      {
-        name: "Red October",
-        description: "Red October bears uniform, bright red-orange fruit resembling hubbard squash. Avg. 6-10 lb. fruit. ",
-        url: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw884d4015/images/products/vegetables/02595_01_redoctober.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196"
-      }
-    ]
-  }
-}
-
   render() {
     console.log(this.state.pumpkinData);
     return (
@@ -78,8 +54,6 @@ class Cart extends Component {
         <div className="modal-footer">
           <button type="button" className="btn btn-warning" data-dismiss="modal">Close</button>
         </div>
-      </div>
-
     </div>
   </div>
 </div>
