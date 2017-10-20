@@ -207,16 +207,21 @@ class App extends Component {
           </div>
 
           <div id="main-body">
-            <Pumpkin />
-            <Pumpkin />
-            <Pumpkin />
+            < Pumpkin url={this.state.pumpkinData[0].url} name={this.state.pumpkinData[0].name} />
+            < Pumpkin url={this.state.pumpkinData[1].url} name={this.state.pumpkinData[1].name}/>
+            < Pumpkin url={this.state.pumpkinData[3].url} name={this.state.pumpkinData[3].name}/>
+            < Pumpkin url={this.state.pumpkinData[22].url} name={this.state.pumpkinData[22].name}/>
+            < Pumpkin url={this.state.pumpkinData[28].url} name={this.state.pumpkinData[28].name}/>
+            < Pumpkin url={this.state.pumpkinData[18].url} name={this.state.pumpkinData[18].name}/>
+
           </div>
 
           <footer className="footer">
             <div className="container">
-              <span className="text-muted">Stuff here</span>
+              <span className="text-muted">Contact Us</span>
             </div>
           </footer>
+          
         </div>
       </Router>
     );
