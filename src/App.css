@@ -31,14 +31,8 @@
   position: relative;
   margin: 0 auto;
   top: 50px;
-  background-color: lightpink;
   width: 80%;
   height: 300px;
-}
-
-#main-content img {
-  height: 400px;
-  width: 400px;
 }
 
 #link-container {
@@ -55,4 +49,18 @@
 
 .link:hover {
   text-decoration: none;
+}
+
+#deal-div {
+  position: relative;
+  margin: 0 auto;
+  top: 10px;
+  border: solid black 1px;
+}
+
+#deal-div img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
 }
