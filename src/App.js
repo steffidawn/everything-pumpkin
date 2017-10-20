@@ -15,9 +15,9 @@ class App extends Component {
       <Router>
         <div>
           <div>
-          <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="#">Pumpkins Direct</a>
+          <nav className="navbar navbar-inverse navbar-fixed-top">
+            <div className="container">
+              <a className="navbar-brand" href="#">Pumpkins Direct</a>
 
               <form className="navbar-form navbar-left" role="search">
                 <div className="form-group">
@@ -25,15 +25,21 @@ class App extends Component {
                 </div>
                 <button type="submit" className="btn btn-default">Submit!</button>
               </form>
-              <Link to = "/"> Go to Home </Link> {' '}
-              <Link to = "/cart"> Go to cart </Link> {' '}
 
-              <p class="navbar-text">Signed in as Pumpkin McGee</p>
+              <div id="link-container">
+                <Link to = "/" className="link"> Go to Home </Link> {' '}
+                <Link to = "/cart" className="link"> Go to cart </Link> {' '}
+              </div>
+
             </div>
           </nav>
           </div>
-          <Route exact path = "/" component = {Pumpkin} />
-          <Route path = "/cart" component = {Cart} />
+
+          <div id="main-content">
+            <Route exact path = "/" component = {Pumpkin} />
+            <Route path = "/cart" component = {Cart} />
+          </div>
+
 
         </div>
       </Router>
