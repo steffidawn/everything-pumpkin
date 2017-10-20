@@ -1,10 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  background-color: rgba(215,177,80,.1);
 }
 
 .App-header {
@@ -31,14 +26,8 @@
   position: relative;
   margin: 0 auto;
   top: 50px;
-  background-color: lightpink;
   width: 80%;
   height: 300px;
-}
-
-#main-content img {
-  height: 400px;
-  width: 400px;
 }
 
 #link-container {
@@ -55,4 +44,45 @@
 
 .link:hover {
   text-decoration: none;
+}
+
+#deal-div {
+  position: relative;
+  margin: 0 auto;
+  top: 10px;
+  border: solid black 1px;
+}
+
+#deal-div img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: RGBA(237,186,108,.93);
+}
+
+#main-nav {
+  background-color: rgba(237,186,108,.93);
+}
+
+#main-body {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    float: left;
+}
+
+.pumpkin-main {
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+  display:inline-block;
 }
